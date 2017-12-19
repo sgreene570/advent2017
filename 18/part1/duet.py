@@ -41,19 +41,16 @@ def main():
             try:
                 t = int(command[1])
                 if t > 0:
-                    i += (int(command[2])) - 1
+                    i += (int(command[2]))
                     continue
                 else:
                     break
             except ValueError:
                 if registers[command[1]] > 0:
-                    i += (int(command[2])) - 1
+                    i += (int(command[2]))
                     continue
 
         i += 1
-        print(i)
-
-
 
 
 if __name__ == "__main__":
